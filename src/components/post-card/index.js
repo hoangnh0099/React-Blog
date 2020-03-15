@@ -13,15 +13,9 @@ const PostCard = (props: Props) => {
 
   return (
     <div className="PostCard">
-      {/*<img*/}
-      {/*  src={`https://picsum.photos/500/400?random=${index}`}*/}
-      {/*  alt=""*/}
-      {/*  className="thumbnail"*/}
-      {/*/>*/}
-      <div
-        style={{
-          backgroundImage: `url(https://picsum.photos/500/300?random=${index}`,
-        }}
+      <img
+        src={`https://picsum.photos/500/400?random=${index}`}
+        alt=""
         className="thumbnail"
       />
       <div className="content-container">

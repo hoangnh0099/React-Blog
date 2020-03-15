@@ -36,9 +36,4 @@
 
 .thumbnail {
   width: 100%;
-  min-height: 300px;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
