@@ -3,7 +3,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { HelloModule } from './hello/hello.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { PostController } from './post/post.controller';
 import { PostsController } from './posts/posts.controller';
 import { PostsService } from './posts/posts.service';
 import { PostsModule } from './posts/posts.module';
@@ -23,7 +22,7 @@ import { PostsModule } from './posts/posts.module';
     HelloModule,
     PostsModule,
   ],
-  controllers: [AppController, PostController, PostsController],
+  controllers: [AppController, PostsController],
   providers: [AppService, PostsService],
 })
 export class AppModule {}
