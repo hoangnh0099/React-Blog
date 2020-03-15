@@ -33,9 +33,13 @@ const SearchResult = (props: Props) => {
     if (!posts.length) {
       return <h1>No result</h1>;
     } else {
-      return posts.map((post, index) => (
-        <PostCard {...post} key={index} index={index} />
-      ));
+      return (
+        <div className="container">
+          {posts.map((post, index) => (
+            <PostCard {...post} key={index} index={index} />
+          ))}
+        </div>
+      );
     }
   };
 

@@ -23,13 +23,11 @@ const Home = () => {
 
   return (
     <div className="Home">
-      {posts.map((post, index) => (
-        <PostCard
-          {...post}
-          key={index}
-          index={index}
-        />
-      ))}
+      <div className="container">
+        {posts.map((post, index) => (
+          <PostCard {...post} key={index} index={index} />
+        ))}
+      </div>
     </div>
   );
 };
