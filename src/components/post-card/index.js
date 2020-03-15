@@ -1,0 +1,30 @@
+import React from 'react';
+import './style.css';
+import { Link } from 'react-router-dom';
+
+export type Props = {
+  title: string,
+  content: string,
+  index: number,
+};
+
+const PostCard = (props: Props) => {
+  const { title, body, index, id } = props;
+
+  return (
+    <div className="PostCard">
+      <div className="content-container">
+        <h2>{title}</h2>
+        <p className="content">{body}</p>
+        <button type="button" className="reading-button">
+          <Link to={`/posts/${id}`} className="button-text">
+            Reading
+          </Link>
+        </button>
+      </div>
+      <img src={`https://picsum.photos/150/150?random=${index}`} alt="" />
+    </div>
+  );
+};
+
+export default PostCard;

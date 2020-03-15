@@ -1,0 +1,35 @@
+.PostCard {
+  width: 100%;
+  padding: 32px;
+  box-shadow: 2px 2px 10px #ccc;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.button-text {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+}
+
+.reading-button {
+  width: 100px;
+  height: 40px;
+  background: #000;
+  margin-top: 32px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
